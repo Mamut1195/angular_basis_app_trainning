@@ -1,0 +1,68 @@
+<header class="sticky top-0 z-50 w-full border-b border-green-500/20 bg-black text-white backdrop-blur ">
+  <div class="container mx-auto flex h-20 items-center justify-between px-4">
+    <!-- Logo -->
+    <div class="flex items-center gap-2">
+      <a routerLink="/" class="flex items-center gap-2 cursor-pointer">
+        <div class="h-10 w-10 rounded-full bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center">
+          <span class="font-bold text-black">FT</span>
+        </div>
+        <span class="font-bold text-xl tracking-tight">FitTrack</span>
+      </a>
+    </div>
+
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:flex items-center gap-8">
+      <a routerLink="/blog" class="text-sm font-medium transition-colors hover:text-green-400 cursor-pointer">
+        Blog
+      </a>
+      <a routerLink="/instagram" class="flex items-center gap-1 text-sm font-medium transition-colors hover:text-green-400 cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+            d="M7.75 2A5.75 5.75 0 002 7.75v8.5A5.75 5.75 0 007.75 22h8.5A5.75 5.75 0 0022 16.25v-8.5A5.75 5.75 0 0016.25 2h-8.5zM12 7.5a4.5 4.5 0 110 9 4.5 4.5 0 010-9zm5.25-.75a.75.75 0 110 1.5.75.75 0 010-1.5z" />
+        </svg>
+        Instagram
+      </a>
+      <a routerLink="/tiktok" class="flex items-center gap-1 text-sm font-medium transition-colors hover:text-green-400 cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-4 w-4 fill-current">
+          <path d="M412.7 133.3c-31.6 0-59.9-16.6-75.8-41.5v165.3c0 64.5-52.3 116.9-116.9 116.9s-116.9-52.3-116.9-116.9 52.3-116.9 116.9-116.9c6.4 0 12.6.6 18.7 1.6v66.1a52.4 52.4 0 00-18.7-3.5c-29 0-52.6 23.6-52.6 52.6s23.6 52.6 52.6 52.6 52.6-23.6 52.6-52.6V0h66.1c.8 2.4 1.8 4.7 2.9 7 10.4 22.8 29.5 41.6 53.5 51.8a104.8 104.8 0 0040.8 8.2v66.1c-4.7.4-9.4.6-14.1.6z" />
+        </svg>
+        TikTok
+      </a>
+      <a routerLink="/atletas" class="flex items-center gap-1 text-sm font-medium transition-colors hover:text-green-400 cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+            d="M17 20h5v-2a4 4 0 00-5-3.87M9 20H4v-2a4 4 0 015-3.87m8-3.63a4 4 0 11-8 0 4 4 0 018 0zM5.5 7a3.5 3.5 0 106.75-2.5m6.25 2.5a3.5 3.5 0 10-6.75-2.5" />
+        </svg>
+        Atletas
+      </a>
+    </nav>
+
+    <!-- Botones y menú móvil -->
+    <div class="flex items-center gap-3">
+      <button class="bg-transparent hover:bg-black/40 text-white border border-green-500/30 hover:border-green-500 rounded px-4 py-2 text-sm cursor-pointer">
+        Iniciar Sesión
+      </button>
+      <button class="bg-green-500 hover:bg-green-600 text-black font-medium rounded px-4 py-2 text-sm cursor-pointer">
+        Registrarse
+      </button>
+      <button class="md:hidden text-white hover:text-green-400 hover:bg-black/40 p-2 rounded cursor-pointer">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="h-6 w-6"
+        >
+          <line x1="4" x2="20" y1="12" y2="12" />
+          <line x1="4" x2="20" y1="6" y2="6" />
+          <line x1="4" x2="20" y1="18" y2="18" />
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
