@@ -8,7 +8,7 @@ import { CommonModule } from '@angular/common';
   imports:[CommonModule]
 })
 
-export class AthleteCardComponent implements OnInit {
+export  class AthleteCardComponent implements OnInit {
   @Input() athlete!: Athlete;
   goals: string[] = [];
 

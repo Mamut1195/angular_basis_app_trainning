@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
   templateUrl: './athletes-list.component.html',
   imports: [AthleteCardComponent, CommonModule],
 })
-export class AthleteListComponent implements OnInit {
+export default class AthleteListComponent implements OnInit {
   athletes: Athlete[] = [];
 
   constructor(private athleteService: AthleteService) {}

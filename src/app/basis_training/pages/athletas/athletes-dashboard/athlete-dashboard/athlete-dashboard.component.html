@@ -1,0 +1,18 @@
+<ng-container *ngIf="athlete$ | async as athlete">
+    <app-dashboard-layout [title]="'Bienvenido, ' + athlete.nombre" [id]="athlete.id">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="bg-zinc-800 p-4 rounded-xl shadow">
+          <h2 class="text-sm text-gray-400">Peso actual</h2>
+          <p class="text-3xl font-bold text-green-400">{{ athlete.peso }} kg</p>
+        </div>
+      </div>
+  
+      <div *ngIf="athlete.objetivos">
+        <h3 class="mt-4 text-sm text-gray-400">Objetivo principal</h3>
+        <p class="text-md font-semibold">
+          {{ athlete.objetivos.split('\n')[0] }}
+        </p>
+      </div>
+    </app-dashboard-layout>
+  </ng-container>
+  

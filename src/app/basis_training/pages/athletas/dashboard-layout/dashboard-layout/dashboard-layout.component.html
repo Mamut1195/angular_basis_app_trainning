@@ -1,0 +1,17 @@
+<div class="min-h-screen flex bg-zinc-900 text-white">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-zinc-800 p-4 hidden md:block">
+      <h2 class="text-xl font-bold mb-6">Menú</h2>
+      <nav class="space-y-2">
+        <a routerLink="/athletes/{{ id }}/dashboard" routerLinkActive="font-bold" class="block px-2 py-1 hover:bg-zinc-700 rounded">Dashboard</a>
+        <a routerLink="/athletes/{{ id }}/calendar" routerLinkActive="font-bold" class="block px-2 py-1 hover:bg-zinc-700 rounded">Calendario</a>
+      </nav>
+    </aside>
+  
+    <!-- Content -->
+    <main class="flex-1 p-4">
+      <h1 class="text-2xl font-bold mb-4">{{ title }}</h1>
+      <ng-content></ng-content>
+    </main>
+  </div>
+  
