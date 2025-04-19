@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { AthletesListComponent } from "../../components/athletes-list/athletes-list.component";
+import { AthleteListComponent } from "../../components/athletes-list/athletes-list.component";
 
 @Component({
   selector: 'app-profiles-page',
-  imports: [ AthletesListComponent],
+  imports: [AthleteListComponent],
   templateUrl: './profiles-page.component.html',
 })
 export default class ProfilesPageComponent {

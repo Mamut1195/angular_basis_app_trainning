@@ -1,6 +1,5 @@
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
-  <app-athlete-card
-    *ngFor="let athlete of athletes"
-    [athlete]="athlete"
-  ></app-athlete-card>
+<div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 ">
+  <ng-container *ngFor="let athlete of athletes; trackBy: trackByAthleteId">
+    <app-athlete-card [athlete]="athlete"></app-athlete-card>
+  </ng-container>
 </div>
